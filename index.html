@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1A1D23">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="بنك الدم">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFPUlEQVR4nO3d23HbMBBGYUiTMpROlNe4ZuU17iTuQ3kJbYrhBSCu++/5CrBJ4HAFSZ7xJQzgcbs/e18D8r19vF96X0OXCyBgH3oE3uwXErFvreKu+kuIGGtqxl3lBxMyYtQI+1r6BxIzYtVopdgTQsjIUWpaF5nQxIxcpRrKeioIGTXkTOvTE5qYUUtOW6eCJmbUdrax5KCJGa2caS0paGJGa6nNRQdNzOglpb2ooIkZvcU2eBg0MWMUMS0W/+ob6Gk3aKYzRnPU5GbQxIxR7bXJkQNSVoNmOmN0W43+FzQxw4q1VjlyQMpL0Eznen7++d37EiQtm2VCNzDFTNT1ETSkfAbNcaOO5VRmSpc3b5cJDSkEXdHWNGZK13MNgeNGDUfREnVZU8NMaEgh6Apipy9TujyCLoxI+7pyfu6LB6Ccx+3+ZEIXdDZOoi6HoCGFoAvJnbJM6TIIugBiHAdBD4QHIx9BZyodIVHnIWhIIegMtaYpU/o8gj6J6MZE0IPigTmHoE9oFRtRpyPoREQ2NoIeHA9QGoJOQFzjI2gDeJDiEXSk3lH1/v1WEHQEYrKDoA3hwTpG0AeIyBaCNoYHbB9B7xg1nlGvawQEvYFobCJoo3jg1hH0CmKxi6AXLMVs6VpbIWjjiPoVQc8Qh30ELYAH8QtB/0MUGgg6aMSscA8lELQQoiZoIhDjOmjFmBXvKYXroKHHbdDKk0z53o64DVqd16hdBu11sz1wF7SnmD3d68Rd0NDmKmiPE8vbPbsK2itPUbsJ2tOmeuYiaGL2swYugoYf8kF7mUwxPKyFdNAeNjCV+ppIBw1/ZINWn0Q5lNdGNmj4JBm08gQqRXWNLo/b/dn7ImpS3bgcv77/6H0J1UhO6Akxr1NeF9mglTetBNX1kQxadbNKU1wnyaDhl1zQilOnJrX1kgpabXNaUVo3qaABmaCVpkwPKusnEzQQgkjQKtOlN4V1lAgamJgPWmGqjMT6epoPGpgjaEgxHbT1l8dRWV5X00EDSwQNKWaDtvyyaIHV9TUbNLCGoCGFoCGFoCHFZNBW37BYY3GdTQYNbCFoSCFoSCFoSCFoSCFoSCFoSCFoSCFoSCFoSCFoSCFoSDEZtPL/CBmJxXU2GTSwhaAhhaAhhaAhxWzQFt+wWGJ1fc0GDawhaEgxHbTVl8XRWV5X00EDSwQNKeaDtvzyOCLr62k+aGBOImjrU2UUCusoETQwkQlaYbr0pLJ+MkEDIYgFrTJlWlNaN6mgQ9DanBbU1ksuaPgmGbTa1KlFcZ0kgw5Bc7NKUl0f2aBD0N20XMrrIh00/JEPWnkanaG+HvJBh6C/ibE8rIOLoEPwsZl7vNz/9e3j/dL7IlrxsqlLXu777eP98q33RbQ2ba7FfyqZykvIc26OHEvqm61+f1vcBh2C7qar3leMz/Pz43Z/9ryQ3hSOIJ5Dnt4Lup7Qc9ZjsH79pbh7U7jH4htGQn718pGd92PH0shhE/KX+UfPTOgdI05sQt5H0BHmEfWIm4jj/fctIceOeDXjJuI4y2+6mdAZ1qI7EznxlrP6dxxMaViw9ndIq59De/qDJdi01ShfrEDKZtBMaYxqr83dCU3UGM1Rkxw5IOUwaKY0RhHTYtSEJmr0Fttg9JGDqNFLSntJZ2iiRmupzSW/KSRqtHKmtVOfchA1ajvb2OmP7YgateS0VSRK/pgJJZQYkkW+WGFaI1ephoqHyLRGitLDsPhX30xrxKrRStX4mNZYU3PoNZumxO1bq1fuLscD4vahx/FziPMugWsY4f3TXy4uv7RN4Z6eAAAAAElFTkSuQmCC">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFPUlEQVR4nO3d23HbMBBGYUiTMpROlNe4ZuU17iTuQ3kJbYrhBSCu++/5CrBJ4HAFSZ7xJQzgcbs/e18D8r19vF96X0OXCyBgH3oE3uwXErFvreKu+kuIGGtqxl3lBxMyYtQI+1r6BxIzYtVopdgTQsjIUWpaF5nQxIxcpRrKeioIGTXkTOvTE5qYUUtOW6eCJmbUdrax5KCJGa2caS0paGJGa6nNRQdNzOglpb2ooIkZvcU2eBg0MWMUMS0W/+ob6Gk3aKYzRnPU5GbQxIxR7bXJkQNSVoNmOmN0W43+FzQxw4q1VjlyQMpL0Eznen7++d37EiQtm2VCNzDFTNT1ETSkfAbNcaOO5VRmSpc3b5cJDSkEXdHWNGZK13MNgeNGDUfREnVZU8NMaEgh6Apipy9TujyCLoxI+7pyfu6LB6Ccx+3+ZEIXdDZOoi6HoCGFoAvJnbJM6TIIugBiHAdBD4QHIx9BZyodIVHnIWhIIegMtaYpU/o8gj6J6MZE0IPigTmHoE9oFRtRpyPoREQ2NoIeHA9QGoJOQFzjI2gDeJDiEXSk3lH1/v1WEHQEYrKDoA3hwTpG0AeIyBaCNoYHbB9B7xg1nlGvawQEvYFobCJoo3jg1hH0CmKxi6AXLMVs6VpbIWjjiPoVQc8Qh30ELYAH8QtB/0MUGgg6aMSscA8lELQQoiZoIhDjOmjFmBXvKYXroKHHbdDKk0z53o64DVqd16hdBu11sz1wF7SnmD3d68Rd0NDmKmiPE8vbPbsK2itPUbsJ2tOmeuYiaGL2swYugoYf8kF7mUwxPKyFdNAeNjCV+ppIBw1/ZINWn0Q5lNdGNmj4JBm08gQqRXWNLo/b/dn7ImpS3bgcv77/6H0J1UhO6Akxr1NeF9mglTetBNX1kQxadbNKU1wnyaDhl1zQilOnJrX1kgpabXNaUVo3qaABmaCVpkwPKusnEzQQgkjQKtOlN4V1lAgamJgPWmGqjMT6epoPGpgjaEgxHbT1l8dRWV5X00EDSwQNKWaDtvyyaIHV9TUbNLCGoCGFoCGFoCHFZNBW37BYY3GdTQYNbCFoSCFoSCFoSCFoSCFoSCFoSCFoSCFoSCFoSCFoSCFoSDEZtPL/CBmJxXU2GTSwhaAhhaAhhaAhxWzQFt+wWGJ1fc0GDawhaEgxHbTVl8XRWV5X00EDSwQNKeaDtvzyOCLr62k+aGBOImjrU2UUCusoETQwkQlaYbr0pLJ+MkEDIYgFrTJlWlNaN6mgQ9DanBbU1ksuaPgmGbTa1KlFcZ0kgw5Bc7NKUl0f2aBD0N20XMrrIh00/JEPWnkanaG+HvJBh6C/ibE8rIOLoEPwsZl7vNz/9e3j/dL7IlrxsqlLXu777eP98q33RbQ2ba7FfyqZykvIc26OHEvqm61+f1vcBh2C7qar3leMz/Pz43Z/9ryQ3hSOIJ5Dnt4Lup7Qc9ZjsH79pbh7U7jH4htGQn718pGd92PH0shhE/KX+UfPTOgdI05sQt5H0BHmEfWIm4jj/fctIceOeDXjJuI4y2+6mdAZ1qI7EznxlrP6dxxMaViw9ndIq59De/qDJdi01ShfrEDKZtBMaYxqr83dCU3UGM1Rkxw5IOUwaKY0RhHTYtSEJmr0Fttg9JGDqNFLSntJZ2iiRmupzSW/KSRqtHKmtVOfchA1ajvb2OmP7YgateS0VSRK/pgJJZQYkkW+WGFaI1ephoqHyLRGitLDsPhX30xrxKrRStX4mNZYU3PoNZumxO1bq1fuLscD4vahx/FziPMugWsY4f3TXy4uv7RN4Z6eAAAAAElFTkSuQmCC">
+<link rel="manifest" href="manifest.json">
+<title>بنك الدم — متابعة المخزون</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; margin: 0; padding: 0; }
+  body { font-family: 'Tajawal', sans-serif; background: #F6F7F9; color: #1A1D23; }
+  input, select, button, textarea { font-size: 16px; font-family: inherit; }
+  .scroll::-webkit-scrollbar { display: none; }
+  .scroll { -ms-overflow-style: none; scrollbar-width: none; }
+
+  header { background: #1A1D23; color: #fff; padding: 18px 14px 16px; position: sticky; top: 0; z-index: 10; }
+  .brand { display: flex; align-items: center; gap: 9px; justify-content: space-between; }
+  .brand-left { display: flex; align-items: center; gap: 9px; }
+  .logo { width: 34px; height: 34px; border-radius: 9px; background: #B91C3C; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 17px; }
+  .brand-title { font-size: 16.5px; font-weight: 900; }
+  .brand-date { font-size: 11px; color: #9CA3AF; font-family: 'IBM Plex Mono', monospace; }
+  .print-btn { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; border-radius: 9px; padding: 8px 12px; font-size: 13px; font-weight: 700; cursor: pointer; flex-shrink: 0; }
+
+  .stats-row { display: flex; gap: 8px; margin-top: 14px; overflow-x: auto; padding-bottom: 2px; }
+  .stat-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 11px; padding: 8px 13px; min-width: 96px; flex-shrink: 0; }
+  .stat-value { font-size: 19px; font-weight: 900; font-family: 'IBM Plex Mono', monospace; }
+  .stat-label { font-size: 10.5px; color: #9CA3AF; margin-top: 1px; white-space: nowrap; }
+
+  .type-row { display: flex; gap: 6px; margin-top: 10px; overflow-x: auto; padding-bottom: 2px; }
+  .type-chip { display: flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 4px 9px; font-size: 12px; flex-shrink: 0; }
+  .type-dot { width: 7px; height: 7px; border-radius: 999px; }
+  .type-chip .tname { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+  .type-chip .tcount { color: #9CA3AF; }
+
+  .tabs { display: flex; gap: 6px; margin-top: 14px; background: rgba(255,255,255,0.06); border-radius: 10px; padding: 4px; }
+  .tab-btn { flex: 1; background: none; border: none; color: #9CA3AF; padding: 9px 6px; border-radius: 8px; font-weight: 700; font-size: 13px; cursor: pointer; }
+  .tab-btn.active { background: #B91C3C; color: #fff; }
+
+  main { padding: 14px 12px 90px; }
+  .view { display: none; }
+  .view.active { display: block; }
+
+  .search-wrap { position: relative; margin-bottom: 10px; }
+  .search-wrap input { width: 100%; padding: 11px 38px 11px 12px; border-radius: 10px; border: 1px solid #E2E4E9; outline: none; background: #fff; }
+  .search-icon { position: absolute; right: 12px; top: 12px; color: #9CA3AF; font-size: 15px; }
+
+  .filters-row { display: flex; gap: 8px; margin-bottom: 14px; overflow-x: auto; padding-bottom: 2px; }
+  .filters-row select { padding: 10px 12px; border-radius: 10px; border: 1px solid #E2E4E9; font-size: 13.5px; background: #fff; flex-shrink: 0; }
+
+  .empty { text-align: center; padding: 40px; color: #9CA3AF; background: #fff; border-radius: 14px; border: 1px dashed #E2E4E9; }
+
+  .list { display: flex; flex-direction: column; gap: 8px; }
+  .card { background: #fff; border-radius: 12px; border: 1px solid #E9EAEE; padding: 12px; border-inline-start: 4px solid #ccc; }
+  .card-top { display: flex; align-items: flex-start; gap: 10px; }
+  .type-badge { width: 38px; height: 38px; border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 12.5px; }
+  .card-info { flex: 1; min-width: 0; }
+  .patient-name { font-weight: 700; font-size: 14.5px; }
+  .card-sub { font-size: 12px; color: #6B7280; margin-top: 1px; }
+  .component-tag { display: inline-block; font-size: 10.5px; font-weight: 700; color: #4B5563; background: #F0F1F4; border-radius: 6px; padding: 1px 6px; margin-inline-start: 6px; }
+  .bagstatus-tag { display: inline-block; font-size: 10.5px; font-weight: 700; border-radius: 6px; padding: 1px 6px; margin-inline-start: 6px; }
+  .bagstatus-عام { color: #0F766E; background: #E7F5F2; }
+  .bagstatus-محجوز { color: #B45309; background: #FEF3E2; }
+  .bagstatus-تالف { color: #B91C3C; background: #FDECEC; }
+  .card-actions { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
+  .edit-btn, .del-btn { background: none; border: none; cursor: pointer; padding: 5px; flex-shrink: 0; font-size: 15px; border-radius: 7px; }
+  .edit-btn { color: #2563AB; }
+  .edit-btn:hover { background: #EEF5FF; }
+  .del-btn { color: #B0B4BB; }
+  .del-btn:hover { background: #FDECEC; color: #B91C3C; }
+  .card-bottom { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; flex-wrap: wrap; gap: 6px; }
+  .card-dates { font-size: 11.5px; font-family: 'IBM Plex Mono', monospace; color: #6B7280; }
+  .status-pill { font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 3px 9px; white-space: nowrap; display: inline-flex; align-items: center; gap: 4px; }
+
+  .fab { position: fixed; bottom: 20px; left: 20px; display: flex; align-items: center; gap: 7px; background: #B91C3C; color: #fff; border: none; border-radius: 999px; padding: 13px 18px; font-weight: 700; font-size: 14px; cursor: pointer; box-shadow: 0 6px 18px rgba(185,28,60,0.4); z-index: 20; }
+
+  .overlay { position: fixed; inset: 0; background: rgba(20,22,26,0.5); display: none; align-items: flex-end; justify-content: center; z-index: 50; }
+  .overlay.open { display: flex; }
+  .sheet { background: #fff; border-radius: 18px 18px 0 0; padding: 18px 16px calc(18px + env(safe-area-inset-bottom)); width: 100%; max-width: 480px; max-height: 88vh; overflow-y: auto; }
+  .handle { width: 36px; height: 4px; background: #E2E4E9; border-radius: 999px; margin: 0 auto 14px; }
+  .sheet-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .sheet-title { font-weight: 800; font-size: 16px; }
+  .close-btn { background: none; border: none; cursor: pointer; color: #9CA3AF; font-size: 20px; }
+  .error-box { background: #FDECEC; color: #B91C3C; font-size: 12.5px; padding: 8px 10px; border-radius: 8px; margin-bottom: 10px; display: none; }
+
+  .field { margin-bottom: 10px; }
+  .field-label { font-size: 12px; color: #6B7280; margin-bottom: 4px; font-weight: 600; }
+  .field input, .field select { width: 100%; padding: 9px 10px; border-radius: 8px; border: 1px solid #E2E4E9; outline: none; }
+  .field-row { display: flex; gap: 8px; }
+  .field-row .field { flex: 1; }
+  .bagid-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .bagid-row input { flex: 1; min-width: 120px; }
+  .scan-btn { flex-shrink: 0; background: #1A1D23; color: #fff; border: none; border-radius: 8px; padding: 0 12px; font-size: 13px; font-weight: 700; cursor: pointer; }
+  .paste-btn { flex-shrink: 0; background: #0F766E; color: #fff; border: none; border-radius: 8px; padding: 0 12px; font-size: 13px; font-weight: 700; cursor: pointer; }
+  .scan-btn:disabled, .paste-btn:disabled { opacity: 0.6; }
+  .scanner-status { font-size: 12px; margin-top: 5px; min-height: 15px; }
+  .scanner-status.loading { color: #6B7280; }
+  .scanner-status.error { color: #B91C3C; }
+  .scanner-status.success { color: #0F766E; }
+
+  .submit-btn { width: 100%; background: #B91C3C; color: #fff; border: none; border-radius: 10px; padding: 13px; font-weight: 700; font-size: 15px; cursor: pointer; margin-top: 8px; }
+
+  /* Daily notes view */
+  .day-nav { display: flex; align-items: center; gap: 8px; background: #fff; border: 1px solid #E9EAEE; border-radius: 12px; padding: 10px; margin-bottom: 14px; }
+  .day-nav-btn { background: #F0F1F4; border: none; border-radius: 8px; width: 38px; height: 38px; font-size: 16px; cursor: pointer; flex-shrink: 0; }
+  .day-nav input[type="date"] { flex: 1; border: 1px solid #E2E4E9; border-radius: 8px; padding: 9px 8px; text-align: center; }
+  .today-btn { background: #F0F1F4; border: none; border-radius: 8px; padding: 0 12px; height: 38px; font-size: 12.5px; font-weight: 700; cursor: pointer; flex-shrink: 0; color: #4B5563; }
+
+  .day-stats { display: flex; gap: 8px; margin-bottom: 14px; }
+  .day-stat { flex: 1; background: #fff; border: 1px solid #E9EAEE; border-radius: 12px; padding: 12px; text-align: center; }
+  .day-stat-value { font-size: 22px; font-weight: 900; font-family: 'IBM Plex Mono', monospace; color: #B91C3C; }
+  .day-stat-label { font-size: 11.5px; color: #6B7280; margin-top: 2px; }
+
+  .day-units { background: #fff; border: 1px solid #E9EAEE; border-radius: 12px; padding: 12px; margin-bottom: 14px; }
+  .day-units-title { font-weight: 700; font-size: 13.5px; margin-bottom: 8px; }
+  .day-unit-row { display: flex; justify-content: space-between; font-size: 12.5px; padding: 6px 0; border-top: 1px solid #F0F1F4; color: #4B5563; }
+  .day-unit-row:first-of-type { border-top: none; }
+  .day-empty { font-size: 12.5px; color: #9CA3AF; text-align: center; padding: 8px 0; }
+
+  .notes-box { background: #fff; border: 1px solid #E9EAEE; border-radius: 12px; padding: 12px; }
+  .notes-title { font-weight: 800; font-size: 16px; margin-bottom: 8px; }
+  .notes-box textarea { width: 100%; min-height: 160px; border: 1px solid #E2E4E9; border-radius: 10px; padding: 12px; outline: none; resize: vertical; font-size: 17px; line-height: 1.7; font-weight: 500; }
+  .notes-save { margin-top: 8px; background: #1A1D23; color: #fff; border: none; border-radius: 10px; padding: 11px; width: 100%; font-weight: 700; font-size: 14px; cursor: pointer; }
+  .notes-saved-msg { font-size: 11.5px; color: #0F766E; margin-top: 6px; display: none; }
+
+  /* Print report */
+  #printReport { display: none; }
+  @media print {
+    body * { visibility: hidden; }
+    #printReport, #printReport * { visibility: visible; }
+    #printReport { display: block !important; position: absolute; top: 0; right: 0; width: 100%; padding: 12px 16px; }
+    .no-print { display: none !important; }
+  }
+  .report-page { direction: rtl; font-family: 'Tajawal', sans-serif; }
+  .report-page + .report-page { page-break-before: always; margin-top: 0; }
+  .report-title { font-size: 20px; font-weight: 900; margin-bottom: 2px; }
+  .report-sub { font-size: 12px; color: #555; margin-bottom: 16px; font-family: 'IBM Plex Mono', monospace; }
+  .report-table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+  .report-table th, .report-table td { border: 1px solid #ccc; padding: 6px 8px; text-align: center; }
+  .report-table th { background: #F0F1F4; font-weight: 700; }
+  /* تكبير جدول الملخص ليكون واضحاً في الطباعة بدون الحاجة للتكبير */
+  .report-summary-table { width: 100%; font-size: 17px; table-layout: fixed; }
+  .report-summary-table th,
+  .report-summary-table td { padding: 12px 10px; min-height: 48px; line-height: 1.35; }
+  .report-summary-table th { background: #1A1D23; color: #fff; font-size: 17px; font-weight: 900; }
+  .report-summary-table td { font-weight: 800; background: #F8FAFC; }
+  .report-summary-table tbody tr:nth-child(odd) td { background: #F1F5F9; }
+  .report-summary-table .summary-total { background: #E0F2FE !important; color: #075985; font-size: 17px; font-weight: 900; }
+  .report-summary-table .summary-grand { background: #DCFCE7 !important; color: #166534; font-size: 18px; font-weight: 900; }
+  .report-section-title { font-size: 16px; font-weight: 900; margin: 18px 0 8px; }
+  .report-notes { font-size: 14px; line-height: 1.7; margin-top: 6px; white-space: pre-line; }
+  .report-notes .note-row { border-bottom: 1px solid #eee; padding: 6px 0; white-space: pre-line; }
+  .report-notes .note-row { border-bottom: 1px solid #eee; padding: 6px 0; }
+  .report-notes .note-date { font-weight: 700; font-family: 'IBM Plex Mono', monospace; }
+
+  /* ===== Mobile layout fix ===== */
+  html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
+  body { min-width: 0; }
+  header, main { width: 100%; max-width: 100%; }
+  .brand { min-width: 0; width: 100%; }
+  .brand-left { min-width: 0; }
+  .brand > div:last-child { min-width: 0; max-width: 100%; }
+  .brand > div:last-child .print-btn { min-width: 0; }
+
+  @media (max-width: 600px) {
+    header { padding: 12px 10px 12px; }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+    .brand-left { justify-content: flex-start; }
+    .brand-title { font-size: 16px; }
+    .brand-date { font-size: 10px; }
+
+    .brand > div:last-child {
+      display: grid !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px !important;
+      width: 100%;
+    }
+    .print-btn {
+      width: 100%;
+      padding: 8px 4px;
+      min-height: 42px;
+      font-size: 11.5px;
+      line-height: 1.25;
+      white-space: normal;
+    }
+
+    .stats-row { margin-top: 10px; gap: 6px; }
+    .stat-card { min-width: 82px; padding: 7px 10px; }
+    .stat-value { font-size: 18px; }
+    .stat-label { font-size: 10px; }
+
+    .type-row { margin-top: 8px; gap: 5px; }
+    .type-chip { padding: 4px 8px; }
+
+    .tabs { margin-top: 10px; }
+    .tab-btn { font-size: 12px; padding: 8px 4px; }
+
+    main { padding: 10px 10px 100px; }
+    .search-wrap input { width: 100%; min-width: 0; }
+    .filters-row { width: 100%; max-width: 100%; }
+    .filters-row select { max-width: 80vw; }
+
+    .card { padding: 10px; }
+    .card-top { gap: 7px; }
+    .type-badge { width: 36px; height: 36px; }
+    .patient-name { font-size: 14px; }
+    .card-actions { gap: 0; }
+    .edit-btn, .del-btn { padding: 6px; font-size: 15px; }
+    .card-bottom { align-items: flex-start; }
+    .card-dates { font-size: 10.5px; }
+
+    .fab {
+      left: max(12px, env(safe-area-inset-left));
+      bottom: max(14px, env(safe-area-inset-bottom));
+      padding: 12px 16px;
+      font-size: 13px;
+    }
+
+    .sheet { width: 100%; max-width: none; }
+    .field-row { flex-direction: column; gap: 0; }
+    .bagid-row { flex-wrap: nowrap; }
+    .bagid-row input { min-width: 0; width: 100%; }
+  }
+
+  @media (max-width: 380px) {
+    .brand > div:last-child { grid-template-columns: 1fr 1fr 1fr; gap: 4px !important; }
+    .print-btn { font-size: 10.5px; padding-inline: 2px; }
+    .brand-left .logo { width: 32px; height: 32px; }
+    .stat-card { min-width: 76px; }
+    .tab-btn { font-size: 11.5px; }
+  }
+
+
+  /* ===== Remote blood-bag receiving ===== */
+  .movement-card { background:#fff; border:1px solid #E9EAEE; border-radius:12px; padding:12px; margin-bottom:8px; }
+  .movement-top { display:flex; justify-content:space-between; gap:8px; align-items:flex-start; }
+  .movement-title { font-weight:800; font-size:14px; }
+  .movement-meta { color:#6B7280; font-size:12px; margin-top:4px; line-height:1.7; }
+  .movement-badge { border-radius:999px; padding:4px 9px; font-size:11px; font-weight:800; white-space:nowrap; }
+  .movement-badge.pending { background:#FEF3E2; color:#B45309; }
+  .movement-badge.done { background:#E7F5F2; color:#0F766E; }
+  .movement-actions { display:flex; gap:6px; margin-top:9px; }
+  .movement-actions button { border:0; border-radius:8px; padding:8px 10px; font-weight:700; cursor:pointer; }
+  .handoff-btn { background:#E7F5F2; color:#0F766E; border:0; border-radius:8px; padding:6px 9px; font-size:12px; font-weight:800; cursor:pointer; }
+  .approve-movement { background:#B91C3C; color:#fff; flex:1; }
+  .reject-movement { background:#F0F1F4; color:#4B5563; }
+  .link-box { background:#fff; border:1px solid #E9EAEE; border-radius:12px; padding:12px; margin-bottom:12px; }
+  .link-box h3 { font-size:14px; margin-bottom:6px; }
+  .link-box p { font-size:12px; color:#6B7280; line-height:1.6; margin-bottom:8px; }
+  .link-row { display:flex; gap:6px; }
+  .link-row input { flex:1; min-width:0; border:1px solid #E2E4E9; border-radius:8px; padding:9px; direction:ltr; font-size:12px; }
+  .link-row button { border:0; background:#1A1D23; color:#fff; border-radius:8px; padding:0 12px; font-weight:700; }
+  .sync-status { font-size:11.5px; color:#6B7280; margin-top:7px; }
+  .qr-card{margin-top:14px;padding:16px;border:1px solid #E5E7EB;border-radius:16px;background:#fff;text-align:center}
+  .qr-title{font-weight:900;font-size:15px;margin-bottom:10px}
+  .qr-wrap{width:220px;height:220px;margin:0 auto 10px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:10px}
+  .qr-wrap img{width:210px;height:210px;display:block;image-rendering:auto}
+  .qr-help{font-size:12px;color:#6B7280;line-height:1.6}
+  .qr-actions{display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+  .qr-actions button{border:0;border-radius:10px;padding:9px 13px;font-weight:800;cursor:pointer;background:#F3F4F6}
+  @media print{.qr-card{break-inside:avoid}.qr-actions,.sync-status,#syncEndpoint,#copyIntakeLinkBtn{display:none!important}}
+  .intake-mode header, .intake-mode main, .intake-mode .fab { display:none !important; }
+  .intake-view { display:none; min-height:100vh; background:#F6F7F9; padding:16px; }
+  .intake-mode .intake-view { display:block; }
+  .intake-card { max-width:520px; margin:0 auto; background:#fff; border-radius:18px; padding:18px; box-shadow:0 8px 28px rgba(0,0,0,.07); }
+  .intake-logo { width:52px; height:52px; border-radius:14px; background:#B91C3C; color:#fff; display:flex; align-items:center; justify-content:center; font-size:25px; margin:0 auto 10px; }
+  .intake-title { text-align:center; font-size:20px; font-weight:900; }
+  .intake-subtitle { text-align:center; color:#6B7280; font-size:12px; margin:4px 0 16px; }
+  .intake-note { background:#F8FAFC; border:1px solid #E5E7EB; border-radius:10px; padding:9px 10px; font-size:11.5px; color:#4B5563; margin-bottom:12px; line-height:1.6; }
+  .intake-success { display:none; text-align:center; padding:25px 8px; }
+  .intake-success .big { font-size:48px; }
+  .intake-success h2 { margin:8px 0; }
+  .intake-success p { color:#6B7280; font-size:13px; line-height:1.7; }
+</style>
+</head>
+<body>
+<div id="fileModeNotice" style="display:none;position:fixed;inset:0 0 auto 0;z-index:99999;background:#7f1d1d;color:#fff;padding:10px 14px;text-align:center;font-size:13px">⚠️ أنت تفتح الملف محليًا. لتثبيت التطبيق وحفظ البيانات بشكل دائم، افتحه من رابط HTTPS.</div>
+
+
+<header class="no-print">
+  <div class="brand">
+    <div class="brand-left">
+      <div class="logo">🩸</div>
+      <div>
+        <div class="brand-title">بنك الدم</div>
+        <div class="brand-date" id="today"></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:6px;align-items:center;">
+      <button class="print-btn" id="exportDataBtn" type="button">💾 نسخة احتياطية</button>
+      <button class="print-btn" id="importDataBtn" type="button">📥 استرجاع</button>
+      <button class="print-btn" id="printReportBtn">🖨 طباعة تقرير</button>
+    </div>
+  </div>
+  <div class="stats-row scroll" id="statsRow"></div>
+  <div class="type-row scroll" id="typeRow"></div>
+  <div class="tabs">
+    <button class="tab-btn active" id="tabInventory">المخزون</button>
+    <button class="tab-btn" id="tabNotes">الملاحظات اليومية</button>
+  </div>
+</header>
+
+<main class="no-print">
+  <!-- Inventory view -->
+  <div class="view active" id="inventoryView">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input id="search" placeholder="بحث بالاسم أو القسم أو رقم الكيس">
+    </div>
+
+    <div class="filters-row scroll">
+      <select id="filterType"></select>
+      <select id="filterComponent"></select>
+      <select id="filterBagStatus">
+        <option value="all">كل حالات الكيس</option>
+        <option value="عام">عام</option>
+        <option value="محجوز">محجوز</option>
+        <option value="تالف">تالف</option>
+      </select>
+      <select id="filterStatus">
+        <option value="all">كل حالات الانتهاء</option>
+        <option value="ok">صالح</option>
+        <option value="soon">قارب على الانتهاء</option>
+        <option value="expired">منتهي</option>
+      </select>
+    </div>
+
+    <div id="listWrap"></div>
+  </div>
+
+  <!-- Daily notes view -->
+  <div class="view" id="notesView">
+    <div class="day-nav">
+      <button class="day-nav-btn" id="prevDayBtn">◀</button>
+      <input type="date" id="notesDate">
+      <button class="day-nav-btn" id="nextDayBtn">▶</button>
+      <button class="today-btn" id="jumpTodayBtn">اليوم</button>
+    </div>
+
+    <div class="day-stats">
+      <div class="day-stat">
+        <div class="day-stat-value" id="dayReceivedCount">0</div>
+        <div class="day-stat-label">أكياس مستلمة هذا اليوم</div>
+      </div>
+      <div class="day-stat">
+        <div class="day-stat-value" id="dayExpiringCount">0</div>
+        <div class="day-stat-label">أكياس تنتهي هذا اليوم</div>
+      </div>
+    </div>
+
+    <div class="day-units">
+      <div class="day-units-title">الأكياس المستلمة</div>
+      <div id="dayUnitsList"></div>
+    </div>
+
+    <div class="notes-box">
+      <div class="notes-title">ملاحظات اليوم</div>
+      <textarea id="dayNoteText" placeholder="اكتب ملاحظاتك عن هذا اليوم..."></textarea>
+      <button class="notes-save" id="saveNoteBtn">حفظ الملاحظة</button>
+      <div class="notes-saved-msg" id="noteSavedMsg">تم الحفظ ✓</div>
+    </div>
+  </div>
+
+</main>
+
+<button class="fab no-print" id="openFormBtn">+ إضافة كيس</button>
+
+<div class="overlay no-print" id="overlay">
+  <form class="sheet" id="unitForm">
+    <div class="handle"></div>
+    <div class="sheet-head">
+      <div class="sheet-title" id="formTitle">إضافة كيس دم</div>
+      <button type="button" class="close-btn" id="closeFormBtn">✕</button>
+    </div>
+    <div class="error-box" id="errorBox"></div>
+
+    <div class="field">
+      <div class="field-label">نوع مكون الدم</div>
+      <select id="f_component"></select>
+    </div>
+    <div class="field">
+      <div class="field-label">زمرة الدم</div>
+      <select id="f_bloodType"></select>
+    </div>
+    <div class="field">
+      <div class="field-label">حالة الكيس</div>
+      <select id="f_bagStatus">
+        <option value="عام">عام</option>
+        <option value="محجوز">محجوز</option>
+        <option value="تالف">تالف</option>
+      </select>
+    </div>
+    <div class="field">
+      <div class="field-label">اسم المريض</div>
+      <input id="f_patientName">
+    </div>
+    <div class="field">
+      <div class="field-label">القسم</div>
+      <input id="f_department" placeholder="مثال: العناية المشددة">
+    </div>
+    <div class="field">
+      <div class="field-label">رقم الكيس</div>
+      <div class="bagid-row">
+        <input id="f_bagId" placeholder="امسح بكاميرا موبايلك ثم اضغط لصق">
+        <button type="button" class="paste-btn" id="pasteBagIdBtn">📋 لصق</button>
+        <button type="button" class="scan-btn" id="openScannerBtn">📷 صورة</button>
+      </div>
+      <div class="scanner-status" id="scannerStatus"></div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <div class="field-label">تاريخ الاستلام</div>
+        <input type="date" id="f_receivedDate">
+      </div>
+      <div class="field">
+        <div class="field-label">تاريخ الانتهاء</div>
+        <input type="date" id="f_expiryDate">
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">حفظ الكيس</button>
+  </form>
+</div>
+
+<!-- إدخال مخفي يفتح تطبيق الكاميرا الافتراضي بالموبايل مباشرة لالتقاط صورة الباركود -->
+<input type="file" accept="image/*" capture="environment" id="cameraCaptureInput" style="display:none;">
+<input type="file" accept="application/json,.json" id="importDataInput" style="display:none;">
+<!-- عنصر مخفي مطلوب داخليًا من مكتبة قراءة الباركود لفك تشفير الصورة الملتقطة -->
+<div id="reader" style="display:none;"></div>
+
+
+<!-- Printable report (hidden on screen, shown only when printing) -->
+<div id="printReport"></div>
+
+<script>
+const BLOOD_TYPES = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
+const TYPE_COLOR = {
+  "A+": "#B91C3C", "A-": "#B91C3C",
+  "B+": "#2563AB", "B-": "#2563AB",
+  "AB+": "#7C3AED", "AB-": "#7C3AED",
+  "O+": "#0F766E", "O-": "#0F766E",
+};
+const COMPONENT_TYPES = ["دم كامل", "كريات حمر", "صفيحات", "بلاسما"];
+
+let units = [];
+let dailyNotes = {};
+let selectedDate = new Date().toISOString().slice(0, 10);
+let html5QrCode = null;
+let editingUnitId = null;
+let movements = [];
+const STORAGE_KEY_MOVEMENTS = "bloodbank_movements";
+const STORAGE_KEY_ENDPOINT = "bloodbank_syncEndpoint";
+
+function daysUntil(dateStr) {
+  const today = new Date(); today.setHours(0,0,0,0);
+  const d = new Date(dateStr); d.setHours(0,0,0,0);
+  return Math.round((d - today) / 86400000);
+}
+
+function statusOf(expiry) {
+  const days = daysUntil(expiry);
+  // أحمر: منتهي أو باقي يوم واحد/اليوم، برتقالي: خلال أسبوع، أخضر: أكثر من أسبوع
+  if (days <= 1) {
+    return { key: days < 0 ? "expired" : "critical", label: days < 0 ? "منتهي" : (days === 0 ? "ينتهي اليوم" : "ينتهي غداً"), color: "#B91C1C", bg: "#FDECEC" };
+  }
+  if (days <= 7) {
+    return { key: "soon", label: `ينتهي خلال ${days} يوم`, color: "#C2410C", bg: "#FFF1E6" };
+  }
+  return { key: "ok", label: "صالح", color: "#15803D", bg: "#EAF7EE" };
+}
+
+function el(tag, attrs = {}, ...children) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v;
+    else if (k === "html") e.innerHTML = v;
+    else e.setAttribute(k, v);
+  }
+  children.forEach(c => { if (typeof c === "string") e.appendChild(document.createTextNode(c)); else if (c) e.appendChild(c); });
+  return e;
+}
+
+const STORAGE_KEY_UNITS = "bloodbank_units";
+const STORAGE_KEY_NOTES = "bloodbank_dailyNotes";
+const DB_NAME = "BloodBankDB";
+const DB_VERSION = 1;
+
+function openDB() {
+  return new Promise((resolve, reject) => {
+    if (!window.indexedDB) return reject(new Error("indexeddb-unsupported"));
+    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    req.onupgradeneeded = () => {
+      const db = req.result;
+      if (!db.objectStoreNames.contains("app")) db.createObjectStore("app");
+    };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error || new Error("indexeddb-error"));
+  });
+}
+
+async function idbGet(key) {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction("app", "readonly");
+    const req = tx.objectStore("app").get(key);
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+async function idbSet(key, value) {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction("app", "readwrite");
+    tx.objectStore("app").put(value, key);
+    tx.oncomplete = () => resolve(true);
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
+function autoReleaseReservedBags() {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  let changed = false;
+
+  units.forEach(u => {
+    if ((u.bagStatus || "عام") !== "محجوز" || !u.receivedDate) return;
+
+    const received = new Date(u.receivedDate);
+    received.setHours(0, 0, 0, 0);
+    const elapsedDays = Math.floor((today - received) / 86400000);
+
+    // الكيس المحجوز يتحول تلقائياً إلى "عام" بعد مرور 7 أيام كاملة من تاريخ الاستلام.
+    if (elapsedDays >= 7) {
+      u.bagStatus = "عام";
+      changed = true;
+    }
+  });
+
+  return changed;
+}
+
+async function loadUnits() {
+  try {
+    const savedUnits = await idbGet(STORAGE_KEY_UNITS);
+    const savedNotes = await idbGet(STORAGE_KEY_NOTES);
+    const savedMovements = await idbGet(STORAGE_KEY_MOVEMENTS);
+    if (Array.isArray(savedUnits)) units = savedUnits;
+    if (savedNotes && typeof savedNotes === "object") dailyNotes = savedNotes;
+    if (Array.isArray(savedMovements)) movements = savedMovements;
+
+    // Migrate older data saved by the previous localStorage version.
+    if (!savedUnits) {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY_UNITS);
+        if (raw) { units = JSON.parse(raw); await idbSet(STORAGE_KEY_UNITS, units); }
+        const raw2 = localStorage.getItem(STORAGE_KEY_NOTES);
+        if (raw2) { dailyNotes = JSON.parse(raw2); await idbSet(STORAGE_KEY_NOTES, dailyNotes); }
+        const raw3 = localStorage.getItem(STORAGE_KEY_MOVEMENTS);
+        if (raw3) { movements = JSON.parse(raw3); await idbSet(STORAGE_KEY_MOVEMENTS, movements); }
+      } catch (e) {}
+    }
+  } catch (e) {
+    // Fallback for unusual browsers/file previews.
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY_UNITS);
+      const raw2 = localStorage.getItem(STORAGE_KEY_NOTES);
+      const raw3 = localStorage.getItem(STORAGE_KEY_MOVEMENTS);
+      if (raw) units = JSON.parse(raw);
+      if (raw2) dailyNotes = JSON.parse(raw2);
+      if (raw3) movements = JSON.parse(raw3);
+    } catch (ignore) {}
+  }
+  if (autoReleaseReservedBags()) await persistUnits();
+  render();
+  renderNotesView();
+}
+
+async function persistUnits() {
+  try {
+    await idbSet(STORAGE_KEY_UNITS, units);
+    return true;
+  } catch (e) {
+    try { localStorage.setItem(STORAGE_KEY_UNITS, JSON.stringify(units)); return true; }
+    catch (ignore) { showError("تعذر حفظ البيانات. افتح التطبيق من رابط HTTPS حتى تبقى البيانات محفوظة."); return false; }
+  }
+}
+
+async function persistNotes() {
+  try {
+    await idbSet(STORAGE_KEY_NOTES, dailyNotes);
+    return true;
+  } catch (e) {
+    try { localStorage.setItem(STORAGE_KEY_NOTES, JSON.stringify(dailyNotes)); return true; }
+    catch (ignore) { return false; }
+  }
+}
+
+async function persistMovements() {
+  try { await idbSet(STORAGE_KEY_MOVEMENTS, movements); return true; }
+  catch (e) { try { localStorage.setItem(STORAGE_KEY_MOVEMENTS, JSON.stringify(movements)); return true; } catch (ignore) { return false; } }
+}
+
+function getSyncEndpoint() { return (localStorage.getItem(STORAGE_KEY_ENDPOINT) || "").trim(); }
+function setSyncEndpoint(v) { localStorage.setItem(STORAGE_KEY_ENDPOINT, (v || "").trim()); }
+
+function renderMovements() {
+  const wrap = document.getElementById("movementsList"); if (!wrap) return;
+  wrap.innerHTML = "";
+  if (!movements.length) { wrap.appendChild(el("div", {class:"empty"}, "لا توجد عمليات استلام أو تسليم بعد.")); return; }
+  movements.slice().sort((a,b)=>(b.createdAt||"").localeCompare(a.createdAt||"")).forEach(m => {
+    const card = el("div", {class:"movement-card"});
+    const badge = el("span", {class:"movement-badge "+(m.status === "approved" ? "done" : "pending")}, m.status === "approved" ? "تم الاعتماد" : "بانتظار الاعتماد");
+    const title = el("div", {class:"movement-title"}, `كيس ${m.bagId || "—"}`);
+    const top = el("div", {class:"movement-top"}, title, badge);
+    const date = m.receivedDate || (m.createdAt ? new Date(m.createdAt).toLocaleDateString("ar-EG") : "—");
+    const time = m.createdAt ? new Date(m.createdAt).toLocaleTimeString("ar-EG", {hour:"2-digit", minute:"2-digit"}) : "";
+    card.appendChild(top);
+    card.appendChild(el("div", {class:"movement-meta"}, `${m.patientName || "بدون اسم"} · ${m.department || "—"}<br>${m.component || "—"} · ${m.bloodType || "—"} · المسلم: ${m.handoverBy || "—"} · المستلم: ${m.recipient || "—"}<br>الاستلام: ${date} ${time}${m.notes ? "<br>ملاحظة: "+m.notes : ""}`));
+    if (m.status !== "approved") {
+      const approve = el("button", {class:"approve-movement"}, "✓ اعتماد وإضافة للمخزون");
+      approve.addEventListener("click", () => approveMovement(m.id));
+      const reject = el("button", {class:"reject-movement"}, "حذف");
+      reject.addEventListener("click", async () => { if(confirm("حذف طلب الاستلام؟")){ movements=movements.filter(x=>x.id!==m.id); await persistMovements(); renderMovements(); }});
+      card.appendChild(el("div", {class:"movement-actions"}, approve, reject));
+    }
+    wrap.appendChild(card);
+  });
+}
+
+async function approveMovement(id) {
+  const m = movements.find(x=>x.id===id); if (!m) return;
+  const exists = units.some(u => String(u.bagId).trim() === String(m.bagId).trim());
+  if (exists && !confirm("هذا الرقم موجود مسبقاً في المخزون. هل تريد إضافة نسخة جديدة؟")) return;
+  addUnit({component:m.component||"دم كامل", bloodType:m.bloodType||"A+", bagStatus:"محجوز", patientName:m.patientName||"", department:m.department||"", bagId:m.bagId||"", receivedDate:m.receivedDate||new Date().toISOString().slice(0,10), expiryDate:m.expiryDate||""});
+  m.status="approved"; m.approvedAt=new Date().toISOString(); await persistMovements(); renderMovements();
+}
+
+async function syncMovements() {
+  const endpoint=getSyncEndpoint(); const status=document.getElementById("syncStatus");
+  if (!endpoint) { if(status) status.textContent="أدخل رابط المزامنة أولاً."; return; }
+  if(status) status.textContent="جاري المزامنة…";
+  try {
+    const r=await fetch(endpoint+ (endpoint.includes("?")?"&":"?")+"action=list", {cache:"no-store"});
+    if(!r.ok) throw new Error("http");
+    const data=await r.json(); const incoming=Array.isArray(data)?data:(data.items||[]);
+    const known=new Set(movements.map(x=>x.id)); let added=0;
+    incoming.forEach(x=>{ if(x && x.id && !known.has(x.id)){ movements.unshift({...x,status:"pending"}); added++; }});
+    if(added) await persistMovements();
+    renderMovements(); if(status) status.textContent=`تمت المزامنة ✓ (${added} طلب جديد)`;
+  } catch(e) { if(status) status.textContent="تعذر الاتصال بالمزامنة. تأكد من الرابط ونشر الخدمة."; }
+}
+
+function buildIntakeLink() {
+  const input=document.getElementById("intakeLink"); if(!input) return;
+  const base=location.href.split("?")[0]; const endpoint=getSyncEndpoint();
+  const link=base+"?intake=1"+(endpoint?"&endpoint="+encodeURIComponent(endpoint):"");
+  input.value=link;
+  const qr=document.getElementById("intakeQr");
+  if(qr && link) {
+    qr.src="https://quickchart.io/qr?size=500&margin=2&text="+encodeURIComponent(link);
+    qr.dataset.link=link;
+  }
+}
+
+function initIntakeMode() {
+  const params=new URLSearchParams(location.search); if(params.get("intake")!=="1") return false;
+  document.body.classList.add("intake-mode");
+  const endpoint=params.get("endpoint") || "";
+  const bt=document.getElementById("i_bloodType"), co=document.getElementById("i_component");
+  BLOOD_TYPES.forEach(t=>bt.appendChild(el("option",{value:t},t)));
+  COMPONENT_TYPES.forEach(t=>co.appendChild(el("option",{value:t},t)));
+  document.getElementById("i_receivedDate").value=new Date().toISOString().slice(0,10);
+  return true;
+}
+
+function showError(msg) {
+  const box = document.getElementById("errorBox");
+  box.textContent = msg;
+  box.style.display = msg ? "block" : "none";
+}
+
+function addUnit(data) {
+  const unit = {
+    ...data,
+    id: (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random()),
+    bagId: data.bagId.trim() || `#${Math.floor(1000 + Math.random() * 9000)}`,
+    bagStatus: data.bagStatus || "عام",
+  };
+  units.unshift(unit);
+  persistUnits();
+  render();
+  renderNotesView();
+}
+
+function updateUnit(id, data) {
+  const index = units.findIndex(u => u.id === id);
+  if (index === -1) return false;
+  units[index] = {
+    ...units[index],
+    ...data,
+    bagId: data.bagId.trim() || units[index].bagId,
+    bagStatus: data.bagStatus || "عام",
+  };
+  persistUnits();
+  render();
+  renderNotesView();
+  return true;
+}
+
+function removeUnit(id) {
+  if (!confirm("هل تريد حذف هذا الكيس نهائيًا؟")) return;
+  units = units.filter(u => u.id !== id);
+  persistUnits();
+  render();
+  renderNotesView();
+}
+
+function populateSelects() {
+  const fType = document.getElementById("f_bloodType");
+  const filterType = document.getElementById("filterType");
+  fType.innerHTML = "";
+  filterType.innerHTML = '<option value="all">كل الزمر</option>';
+  BLOOD_TYPES.forEach(t => {
+    fType.appendChild(el("option", { value: t }, t));
+    filterType.appendChild(el("option", { value: t }, t));
+  });
+
+  const fComponent = document.getElementById("f_component");
+  const filterComponent = document.getElementById("filterComponent");
+  fComponent.innerHTML = "";
+  filterComponent.innerHTML = '<option value="all">كل المكونات</option>';
+  COMPONENT_TYPES.forEach(c => {
+    fComponent.appendChild(el("option", { value: c }, c));
+    filterComponent.appendChild(el("option", { value: c }, c));
+  });
+}
+
+function getFiltered() {
+  const search = document.getElementById("search").value.trim();
+  const filterType = document.getElementById("filterType").value;
+  const filterComponent = document.getElementById("filterComponent").value;
+  const filterBagStatus = document.getElementById("filterBagStatus").value;
+  const filterStatus = document.getElementById("filterStatus").value;
+  return units
+    .filter(u => filterType === "all" || u.bloodType === filterType)
+    .filter(u => filterComponent === "all" || u.component === filterComponent)
+    .filter(u => filterBagStatus === "all" || (u.bagStatus || "عام") === filterBagStatus)
+    .filter(u => filterStatus === "all" || statusOf(u.expiryDate).key === filterStatus)
+    .filter(u => !search || u.patientName.includes(search) || u.department.includes(search) || u.bagId.includes(search))
+    .sort((a, b) => daysUntil(a.expiryDate) - daysUntil(b.expiryDate));
+}
+
+function renderStats() {
+  const total = units.length;
+  const expired = units.filter(u => statusOf(u.expiryDate).key === "expired").length;
+  const soon = units.filter(u => statusOf(u.expiryDate).key === "soon").length;
+  const damaged = units.filter(u => u.bagStatus === "تالف").length;
+
+  const statsRow = document.getElementById("statsRow");
+  statsRow.innerHTML = "";
+  [
+    { label: "إجمالي", value: total, color: "#fff" },
+    { label: "قارب الانتهاء", value: soon, color: "#F59E0B" },
+    { label: "منتهي", value: expired, color: "#EF4444" },
+    { label: "تالف", value: damaged, color: "#F87171" },
+  ].forEach(s => {
+    statsRow.appendChild(el("div", { class: "stat-card" },
+      el("div", { class: "stat-value", style: `color:${s.color}` }, String(s.value)),
+      el("div", { class: "stat-label" }, s.label)
+    ));
+  });
+
+  const typeRow = document.getElementById("typeRow");
+  typeRow.innerHTML = "";
+  BLOOD_TYPES.forEach(t => {
+    const count = units.filter(u => u.bloodType === t).length;
+    const chip = el("div", { class: "type-chip" },
+      el("span", { class: "type-dot", style: `background:${TYPE_COLOR[t]}` }),
+      el("span", { class: "tname" }, t),
+      el("span", { class: "tcount" }, String(count))
+    );
+    typeRow.appendChild(chip);
+  });
+}
+
+function renderList() {
+  const wrap = document.getElementById("listWrap");
+  wrap.innerHTML = "";
+  const filtered = getFiltered();
+
+  if (filtered.length === 0) {
+    wrap.appendChild(el("div", { class: "empty" }, "لا توجد أكياس مطابقة. أضف كيسًا جديدًا للبدء."));
+    return;
+  }
+
+  const list = el("div", { class: "list" });
+  filtered.forEach(u => {
+    const st = statusOf(u.expiryDate);
+    const card = el("div", { class: `card expiry-${st.key}`, style: `border-inline-start-color:${st.color}` });
+
+    const badge = el("div", { class: "type-badge", style: `background:${TYPE_COLOR[u.bloodType]}15;color:${TYPE_COLOR[u.bloodType]}` }, u.bloodType);
+    const info = el("div", { class: "card-info" },
+      el("div", { class: "patient-name" }, u.patientName,
+        el("span", { class: "component-tag" }, u.component || "دم كامل"),
+        el("span", { class: `bagstatus-tag bagstatus-${u.bagStatus || "عام"}` }, u.bagStatus || "عام")
+      ),
+      el("div", { class: "card-sub" }, `${u.department} · كيس ${u.bagId}`)
+    );
+    const editBtn = el("button", { class: "edit-btn", title: "تعديل الكيس", "aria-label": "تعديل الكيس" }, "✏️");
+    editBtn.addEventListener("click", () => openEditForm(u.id));
+
+    const delBtn = el("button", { class: "del-btn", title: "حذف الكيس", "aria-label": "حذف الكيس" }, "🗑");
+    delBtn.addEventListener("click", () => removeUnit(u.id));
+
+    const actions = el("div", { class: "card-actions" }, editBtn, delBtn);
+    const top = el("div", { class: "card-top" }, badge, info, actions);
+
+    const dates = el("div", { class: "card-dates" }, `${u.receivedDate} ← ${u.expiryDate}`);
+    const pill = el("div", { class: "status-pill", style: `color:${st.color};background:${st.bg}` }, (st.key === "expired" ? "⚠ " : "") + st.label);
+    const bottom = el("div", { class: "card-bottom" }, dates, pill);
+
+    card.appendChild(top);
+    card.appendChild(bottom);
+    list.appendChild(card);
+  });
+  wrap.appendChild(list);
+}
+
+
+function render() {
+  // يفحص تلقائياً الأكياس المحجوزة ويحررها عند مرور 7 أيام من الاستلام.
+  if (autoReleaseReservedBags()) persistUnits();
+  renderStats();
+  renderList();
+}
+
+function openForm() {
+  showError("");
+  editingUnitId = null;
+  document.getElementById("formTitle").textContent = "إضافة كيس دم";
+  document.querySelector("#unitForm .submit-btn").textContent = "حفظ الكيس";
+  document.getElementById("unitForm").reset();
+  document.getElementById("f_receivedDate").value = new Date().toISOString().slice(0, 10);
+  setScannerStatus("");
+  document.getElementById("overlay").classList.add("open");
+}
+
+function openEditForm(id) {
+  const unit = units.find(u => u.id === id);
+  if (!unit) return;
+
+  editingUnitId = id;
+  showError("");
+  document.getElementById("formTitle").textContent = "تعديل بيانات الكيس";
+  document.querySelector("#unitForm .submit-btn").textContent = "حفظ التعديلات";
+
+  document.getElementById("f_component").value = unit.component || "دم كامل";
+  document.getElementById("f_bloodType").value = unit.bloodType || "A+";
+  document.getElementById("f_bagStatus").value = unit.bagStatus || "عام";
+  document.getElementById("f_patientName").value = unit.patientName || "";
+  document.getElementById("f_department").value = unit.department || "";
+  document.getElementById("f_bagId").value = unit.bagId || "";
+  document.getElementById("f_receivedDate").value = unit.receivedDate || "";
+  document.getElementById("f_expiryDate").value = unit.expiryDate || "";
+  setScannerStatus("");
+  document.getElementById("overlay").classList.add("open");
+}
+
+function closeForm() {
+  editingUnitId = null;
+  document.getElementById("overlay").classList.remove("open");
+}
+
+/* ---- Tabs ---- */
+function switchTab(tab) {
+  document.getElementById("tabInventory").classList.toggle("active", tab === "inventory");
+  document.getElementById("tabNotes").classList.toggle("active", tab === "notes");
+  document.getElementById("inventoryView").classList.toggle("active", tab === "inventory");
+  document.getElementById("notesView").classList.toggle("active", tab === "notes");
+  if (tab === "notes") renderNotesView();
+}
+
+/* ---- Daily notes ---- */
+function renderNotesView() {
+  document.getElementById("notesDate").value = selectedDate;
+
+  const receivedThatDay = units.filter(u => u.receivedDate === selectedDate);
+  const expiringThatDay = units.filter(u => u.expiryDate === selectedDate);
+
+  document.getElementById("dayReceivedCount").textContent = receivedThatDay.length;
+  document.getElementById("dayExpiringCount").textContent = expiringThatDay.length;
+
+  const listEl = document.getElementById("dayUnitsList");
+  listEl.innerHTML = "";
+  if (receivedThatDay.length === 0) {
+    listEl.appendChild(el("div", { class: "day-empty" }, "لا توجد أكياس مستلمة بهذا اليوم"));
+  } else {
+    receivedThatDay.forEach(u => {
+      listEl.appendChild(el("div", { class: "day-unit-row" },
+        el("span", {}, `${u.patientName} · ${u.component || "دم كامل"} (${u.bloodType})`),
+        el("span", {}, u.department)
+      ));
+    });
+  }
+
+  document.getElementById("dayNoteText").value = dailyNotes[selectedDate] || "";
+  document.getElementById("noteSavedMsg").style.display = "none";
+}
+
+function changeDay(offsetDays) {
+  const d = new Date(selectedDate);
+  d.setDate(d.getDate() + offsetDays);
+  selectedDate = d.toISOString().slice(0, 10);
+  renderNotesView();
+}
+
+/* ---- Barcode scanner: يفتح تطبيق الكاميرا الافتراضي بالموبايل مباشرة ---- */
+const BARCODE_FORMATS = [
+  Html5QrcodeSupportedFormats.CODE_128,
+  Html5QrcodeSupportedFormats.CODE_39,
+  Html5QrcodeSupportedFormats.CODABAR,
+  Html5QrcodeSupportedFormats.ITF,
+  Html5QrcodeSupportedFormats.EAN_13,
+  Html5QrcodeSupportedFormats.EAN_8,
+  Html5QrcodeSupportedFormats.UPC_A,
+  Html5QrcodeSupportedFormats.UPC_E,
+  Html5QrcodeSupportedFormats.QR_CODE,
+];
+
+function setScannerStatus(text, kind) {
+  const el2 = document.getElementById("scannerStatus");
+  el2.textContent = text || "";
+  el2.className = "scanner-status" + (kind ? ` ${kind}` : "");
+}
+
+function openScanner() {
+  if (typeof Html5Qrcode === "undefined") {
+    setScannerStatus("تعذر تحميل أداة المسح، تحقق من الاتصال بالإنترنت", "error");
+    return;
+  }
+  setScannerStatus("");
+  // بيفتح تطبيق الكاميرا الافتراضي بالموبايل (نفس تطبيق الكاميرا العادي)
+  document.getElementById("cameraCaptureInput").click();
+}
+
+async function decodeImageFile(file) {
+  const btn = document.getElementById("openScannerBtn");
+  btn.disabled = true;
+  setScannerStatus("جاري التعرف على الباركود من الصورة...", "loading");
+
+  try {
+    if (!html5QrCode) {
+      html5QrCode = new Html5Qrcode("reader", {
+        formatsToSupport: BARCODE_FORMATS,
+        verbose: false,
+      });
+    }
+    const decodedText = await html5QrCode.scanFile(file, false);
+    document.getElementById("f_bagId").value = decodedText;
+    setScannerStatus("✓ تم التعرف على الباركود بنجاح", "success");
+  } catch (err) {
+    setScannerStatus("تعذر التعرف على الباركود بالصورة، جرّب صورة أوضح وأقرب أو اكتب الرقم يدويًا", "error");
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+document.getElementById("cameraCaptureInput").addEventListener("change", (e) => {
+  const file = e.target.files && e.target.files[0];
+  if (file) decodeImageFile(file);
+  e.target.value = ""; // يسمح بالتقاط صورة جديدة بنفس الاسم لاحقًا
+});
+
+/* ---- لصق من الحافظة: بعد ما تمسح الباركود بقارئ الموبايل الافتراضي وينسخ القيمة ---- */
+async function pasteBagId() {
+  const btn = document.getElementById("pasteBagIdBtn");
+  const input = document.getElementById("f_bagId");
+  btn.disabled = true;
+  try {
+    if (!navigator.clipboard || !navigator.clipboard.readText) {
+      throw new Error("clipboard-unsupported");
+    }
+    const text = await navigator.clipboard.readText();
+    if (text && text.trim()) {
+      input.value = text.trim();
+      setScannerStatus("✓ تم اللصق من الحافظة", "success");
+      input.focus();
+    } else {
+      setScannerStatus("الحافظة فاضية، انسخ رقم الباركود أول", "error");
+    }
+  } catch (err) {
+    // بعض المتصفحات (خصوصًا سفاري) بتحتاج لصق يدوي عن طريق الضغط المطوّل على الحقل
+    setScannerStatus("تعذر اللصق تلقائيًا، اضغط مطولًا داخل الحقل واختر \"لصق\"", "error");
+    input.focus();
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+document.getElementById("pasteBagIdBtn").addEventListener("click", pasteBagId);
+
+/* ---- Backup / Restore ---- */
+function exportData() {
+  const payload = {
+    app: "بنك الدم",
+    version: 2,
+    exportedAt: new Date().toISOString(),
+    units,
+    dailyNotes,
+    movements
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `blood-bank-backup-${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+async function importData(file) {
+  try {
+    const text = await file.text();
+    const data = JSON.parse(text);
+    if (!Array.isArray(data.units) || typeof data.dailyNotes !== "object") {
+      throw new Error("invalid-backup");
+    }
+    if (!confirm("سيتم استبدال البيانات الحالية بالنسخة الاحتياطية. متابعة؟")) return;
+    units = data.units;
+    dailyNotes = data.dailyNotes || {};
+    await persistUnits();
+    await persistNotes();
+    render();
+    renderNotesView();
+    alert("تم استرجاع البيانات بنجاح ✓");
+  } catch (e) {
+    alert("ملف النسخة الاحتياطية غير صالح.");
+  }
+}
+
+/* ---- Print report ---- */
+function buildPrintReport() {
+  const now = new Date();
+  const dateStr = now.toLocaleDateString("ar-EG", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+
+  // Page 1: detailed list
+  const rows = units.slice().sort((a, b) => daysUntil(a.expiryDate) - daysUntil(b.expiryDate)).map(u => {
+    const st = statusOf(u.expiryDate);
+    return `<tr>
+      <td>${u.bagId}</td>
+      <td>${u.patientName}</td>
+      <td>${u.department}</td>
+      <td>${u.bloodType}</td>
+      <td>${u.component || "دم كامل"}</td>
+      <td>${u.bagStatus || "عام"}</td>
+      <td>${u.receivedDate}</td>
+      <td>${u.expiryDate}</td>
+      <td>${st.label}</td>
+    </tr>`;
+  }).join("");
+
+  const page1 = `
+    <div class="report-page">
+      <div class="report-title">تقرير بنك الدم — التفاصيل</div>
+      <div class="report-sub">تاريخ التقرير: ${dateStr} · عدد الأكياس: ${units.length}</div>
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th>رقم الكيس</th><th>المريض</th><th>القسم</th><th>الزمرة</th><th>المكون</th><th>حالة الكيس</th><th>الاستلام</th><th>الانتهاء</th><th>الحالة</th>
+          </tr>
+        </thead>
+        <tbody>${rows || '<tr><td colspan="9">لا توجد أكياس مسجلة</td></tr>'}</tbody>
+      </table>
+    </div>
+  `;
+
+  // Page 2: summary matrix (blood type x component) + notes
+  let matrixHead = `<th>الزمرة</th>` + COMPONENT_TYPES.map(c => `<th>${c}</th>`).join("") + `<th>الإجمالي</th>`;
+  let matrixRows = "";
+  BLOOD_TYPES.forEach(t => {
+    let rowTotal = 0;
+    const cells = COMPONENT_TYPES.map(c => {
+      const count = units.filter(u => u.bloodType === t && (u.component || "دم كامل") === c).length;
+      rowTotal += count;
+      return `<td class="summary-cell-${COMPONENT_TYPES.indexOf(c)}">${count}</td>`;
+    }).join("");
+    matrixRows += `<tr><td><strong>${t}</strong></td>${cells}<td><strong>${rowTotal}</strong></td></tr>`;
+  });
+  let colTotals = COMPONENT_TYPES.map(c => units.filter(u => (u.component || "دم كامل") === c).length);
+  let grandTotal = units.length;
+  matrixRows += `<tr class="summary-total"><td><strong>الإجمالي</strong></td>${colTotals.map(v => `<td><strong>${v}</strong></td>`).join("")}<td class="summary-grand"><strong>${grandTotal}</strong></td></tr>`;
+
+  // التقرير يعرض ملاحظات يوم التقرير فقط، ولا يجمع ملاحظات الأيام السابقة.
+  const todayKey = new Date().toISOString().slice(0, 10);
+  const todayNote = dailyNotes[todayKey] || "";
+  const escapedTodayNote = todayNote
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+  const notesHtml = todayNote.trim()
+    ? `<div class="note-row"><span class="note-date">${todayKey}</span><div>${escapedTodayNote}</div></div>`
+    : '<div class="report-notes">لا توجد ملاحظات مسجلة لهذا اليوم</div>';
+
+  const page2 = `
+    <div class="report-page">
+      <div class="report-title">تقرير بنك الدم — الملخص</div>
+      <div class="report-sub">تاريخ التقرير: ${dateStr}</div>
+      <table class="report-table report-summary-table">
+        <thead><tr>${matrixHead}</tr></thead>
+        <tbody>${matrixRows}</tbody>
+      </table>
+      <div class="report-section-title">الملاحظات اليومية</div>
+      <div class="report-notes">${notesHtml}</div>
+    </div>
+  `;
+
+  document.getElementById("printReport").innerHTML = page1 + page2;
+}
+
+function printReport() {
+  buildPrintReport();
+  const today = new Date();
+  const isoDate = today.toISOString().slice(0, 10);
+  const displayDate = today.toLocaleDateString("ar-EG", { year: "numeric", month: "2-digit", day: "2-digit" });
+  const oldTitle = document.title;
+  // اسم ملف PDF المقترح عند اختيار "حفظ كـ PDF"
+  document.title = `تقرير بنك الدم ليوم ${displayDate}`;
+  window.print();
+  setTimeout(() => { document.title = oldTitle; }, 1000);
+}
+
+document.getElementById("today").textContent = new Date().toLocaleDateString("ar-EG", { weekday: "long", day: "numeric", month: "long" });
+
+populateSelects();
+document.getElementById("openFormBtn").addEventListener("click", openForm);
+document.getElementById("closeFormBtn").addEventListener("click", closeForm);
+document.getElementById("overlay").addEventListener("click", (e) => { if (e.target.id === "overlay") closeForm(); });
+document.getElementById("search").addEventListener("input", renderList);
+document.getElementById("filterType").addEventListener("change", renderList);
+document.getElementById("filterComponent").addEventListener("change", renderList);
+document.getElementById("filterBagStatus").addEventListener("change", renderList);
+document.getElementById("filterStatus").addEventListener("change", renderList);
+
+document.getElementById("tabInventory").addEventListener("click", () => switchTab("inventory"));
+document.getElementById("tabNotes").addEventListener("click", () => switchTab("notes"));
+
+
+document.getElementById("prevDayBtn").addEventListener("click", () => changeDay(-1));
+document.getElementById("nextDayBtn").addEventListener("click", () => changeDay(1));
+document.getElementById("jumpTodayBtn").addEventListener("click", () => { selectedDate = new Date().toISOString().slice(0, 10); renderNotesView(); });
+document.getElementById("notesDate").addEventListener("change", (e) => { selectedDate = e.target.value; renderNotesView(); });
+
+document.getElementById("saveNoteBtn").addEventListener("click", async () => {
+  const text = document.getElementById("dayNoteText").value;
+  dailyNotes[selectedDate] = text;
+  const ok = await persistNotes();
+  const msg = document.getElementById("noteSavedMsg");
+  msg.style.display = "block";
+  msg.textContent = ok ? "تم الحفظ ✓" : "تعذر الحفظ، حاول مجددًا";
+  msg.style.color = ok ? "#0F766E" : "#B91C3C";
+});
+
+document.getElementById("openScannerBtn").addEventListener("click", openScanner);
+
+document.getElementById("printReportBtn").addEventListener("click", printReport);
+document.getElementById("exportDataBtn").addEventListener("click", exportData);
+document.getElementById("importDataBtn").addEventListener("click", () => document.getElementById("importDataInput").click());
+document.getElementById("importDataInput").addEventListener("change", (e) => {
+  const file = e.target.files && e.target.files[0];
+  if (file) importData(file);
+  e.target.value = "";
+});
+
+document.getElementById("unitForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = {
+    component: document.getElementById("f_component").value,
+    bloodType: document.getElementById("f_bloodType").value,
+    bagStatus: document.getElementById("f_bagStatus").value,
+    patientName: document.getElementById("f_patientName").value.trim(),
+    department: document.getElementById("f_department").value.trim(),
+    bagId: document.getElementById("f_bagId").value,
+    receivedDate: document.getElementById("f_receivedDate").value,
+    expiryDate: document.getElementById("f_expiryDate").value,
+  };
+  if (!data.patientName || !data.department || !data.expiryDate) {
+    showError("الرجاء تعبئة اسم المريض والقسم وتاريخ الانتهاء");
+    return;
+  }
+
+  if (editingUnitId) {
+    updateUnit(editingUnitId, data);
+  } else {
+    addUnit(data);
+  }
+  closeForm();
+});
+
+if (!initIntakeMode()) { loadUnits(); }
+
+// إذا بقي التطبيق مفتوحاً، يعاد فحص الأكياس المحجوزة دورياً دون الحاجة لإعادة فتح التطبيق.
+setInterval(() => {
+  if (document.body.classList.contains("intake-mode")) return;
+  if (autoReleaseReservedBags()) {
+    persistUnits();
+    render();
+    renderNotesView();
+  }
+}, 60 * 60 * 1000);
+
+</script>
+<script>
+if (location.protocol === 'file:') document.getElementById('fileModeNotice').style.display='block';
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+}
+</script>
+</body>
+</html>
